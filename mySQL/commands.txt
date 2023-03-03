@@ -1,0 +1,2 @@
+docker exec -it my-sql-db-1 bash
+mysql -uroot -p
