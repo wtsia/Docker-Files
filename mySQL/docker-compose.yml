@@ -9,7 +9,7 @@ services:
     command: --default-authentication-plugin=sha256_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${ROOT_PWD}
+      MYSQL_ROOT_PASSWORD: ${root_pwd}
 
   adminer:
     image: adminer
