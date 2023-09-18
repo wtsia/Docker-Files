@@ -1,2 +1,19 @@
-docker exec -it my-sql-db-1 bash
+COMMANDS
+
+LOGGING INTO mySQL DOCKER CONTAINER
+==================================
+docker exec -it {db_name} bash
+mysql -u root -p
+==================================
+docker exec -it mysql-db-1 bash
 mysql -uroot -p
+
+
+COPYING SCRIPT INTO CONTAINER
+==============================
+docker cp myscript.sql container_id:/{my_directory}/{myScript.sql}
+
+RUN SCRIPT IN CONTAINER
+========================
+source /mysql/myscript.sql
+
